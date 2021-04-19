@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.IO;
 
-namespace Jorgelig.BuroCreditoFacturaParser
+namespace Jorgelig.BuroCreditoFacturaParser.v1
 {
     public class BureauTextReader : TextReader
     {

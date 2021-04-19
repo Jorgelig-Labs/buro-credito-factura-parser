@@ -1,27 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="BuroCreditoParserTest.cs" />
+    <None Remove="Files\01111OMISIONR.wri" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Files\FileTest1.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="BuroCreditoParserTest.cs">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
+    <PackageReference Include="FluentAssertions" Version="5.10.3" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.8.0" />
     <PackageReference Include="xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -34,11 +25,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BuroCreditoFacturaParser\Jorgelig.BuroCreditoFacturaParser.csproj" />
+    <Content Include="Files\01111OMISIONR.wri">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Files\FileTest1.txt" />
+    <ProjectReference Include="..\BuroCreditoFacturaParser\Jorgelig.BuroCreditoFacturaParser.csproj" />
   </ItemGroup>
 
 </Project>
