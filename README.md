@@ -2,7 +2,7 @@
  Implementacion de TextReader para importar las facturas de buro de credito de texto a una estructura de datos
 
 Ejemplo de Factura en formato texto
-![image](https://user-images.githubusercontent.com/581672/115196417-7d800a00-a0b5-11eb-9c3a-394e8fce9c37.png)
+![image](https://user-images.githubusercontent.com/581672/115197026-2fb7d180-a0b6-11eb-896f-c00381e856d9.png)
 
 
 Ejemplo de encabezado de la factura parseado
